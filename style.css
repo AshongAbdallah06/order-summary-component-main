@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+	font-family: "Red Hat Display", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	width: 100%;
+	flex-direction: column;
+}
+
+header {
+	/* width: 100%; */
+}
+
+.hero {
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	height: 9rem;
+	width: 100%;
+}
+
+main,
+.proceed {
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+main {
+	margin-top: -0.28rem;
+	display: flex;
+	justify-content: center;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	background-color: white;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	text-align: center;
+}
+
+h1 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+h1,
+.text,
+section {
+	margin-bottom: 1rem;
+}
+
+.text {
+	color: hsl(224, 23%, 55%);
+	font-size: 0.8rem;
+	line-height: 1.3rem;
+}
+
+section {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+button,
+.music,
+.change {
+	cursor: pointer;
+}
+
+.music {
+	height: 2rem;
+}
+
+h2 {
+	font-size: 0.9rem;
+}
+
+.price {
+	font-size: 0.8rem;
+	color: hsl(224, 23%, 55%);
+}
+
+.change {
+	color: hsl(245, 75%, 52%);
+	background-color: transparent;
+	border: none;
+	text-decoration: underline;
+	font-size: 00.7rem;
+	font-weight: 700;
+}
+
+.change:hover {
+	text-decoration: none;
+}
+
+button {
+	padding: 0.4rem 0;
+	border: none;
+	font-size: 0.7rem;
+	font-weight: 700;
+	border-radius: 0.3rem;
+	background-color: transparent;
+	margin-top: 1rem;
+}
+
+.proceed:hover {
+	background-color: hsl(224, 23%, 55%);
+}
+
+.proceed {
+	width: 100%;
+	background-color: hsl(245, 75%, 52%);
+	color: white;
+}
+
+.cancel {
+	color: hsl(224, 23%, 55%);
+	display: inline-block;
+}
+
+.cancel:hover {
+	color: #000;
+}
+
+.change,
+.proceed,
+.cancel {
+	transition: all 0.15s;
+}
